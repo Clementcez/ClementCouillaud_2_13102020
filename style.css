@@ -1,31 +1,81 @@
-#conteneur{
-    display: flex;
-    border: 2px solid #444;
+@font-face{
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
 }
 
-#header{
+body{
+    font-family: 'Raleway';
+    margin-bottom: 3em; 
+    margin-top: 3em;
+    margin-right: 8em;
+    margin-left: 8em;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .menu{
+    display: flex;
+    height: auto;
+    width: auto;
+    border: 2px solid #444;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style:none;
+}
+
+.menu li{
+    height: 5em;
+    width: auto;
+}
+
+.links{
     display: flex;
 }
 
 .logo{
-    width: 150px;
-    height: 100px;
-    background-color: indigo;
+    content:url(images/logo/Reservia@3x.png);
+    height: 5em;
+    width: auto;
+    align-self: center;
 }
 
-.element{
-    width: 150px;
-    height: 100px;
+.filters{
+    display: flex;
+    flex-direction: row;
 }
 
-.element:nth-child(1){
-    background-color: orange;
+.filters > div{
+    display: flex;
+    flex-direction: row;
 }
 
-.element:nth-child(2){
-    background-color: blue;
+.results{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
-.element:nth-child(3){
-    background-color: greenyellow;
+.totalResults{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filtered{
+    background-color: #F2F2F2;
+    height: 80em;
+    width: 65%;
+    border-radius: 1em;
+}
+
+.popResults{
+    background-color: #F2F2F2;
+    height: 80em;
+    width: 30%;
+    border-radius: 1em;
 }
