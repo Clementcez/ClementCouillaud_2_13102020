@@ -4,7 +4,8 @@
 }
 
 body{
-    font-family: 'Raleway';
+    font-family: 'Raleway', Impact, "Arial Black", sans-serif;
+    font-size: small;
     margin-bottom: 3em; 
     margin-top: 3em;
     margin-right: 8em;
@@ -15,6 +16,15 @@ a{
     color: black;
     cursor: pointer;
     text-decoration: none;
+    margin: 0;
+}
+
+section{
+    margin-top: 3em;
+}
+
+h3{
+    overflow-wrap: break-word;
 }
 
 .nav{
@@ -45,7 +55,7 @@ a{
 
 .logo{
     content:url(images/logo/Reservia@3x.png);
-    height: 5em;
+    height: 4em;
     width: auto;
     align-self: center;
 }
@@ -108,17 +118,18 @@ a{
 
 .cardContent{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     height: 80px;
-    padding-left: 8px;
+    padding-left: 10px;
+    padding-top: 8px;
 }
 
 .cardContent > h3{
-    margin: 3px;
+    margin: 5px;
 }
 
 .cardContent > p{
-    margin: 3px;
+    margin: 5px;
 }
 
 .popResults{
@@ -159,7 +170,7 @@ a{
 }
 
 .popStar{
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .activityTown{
@@ -174,7 +185,7 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 30em;
+    height: 35em;
     width: 50%;
 }
 
@@ -187,7 +198,7 @@ a{
 
 .litCard{
     height: auto;
-    width: 43%;
+    width: 50%;
     border-radius: 1em 1em 1em 1em;
     box-shadow: 0px 0px 10px 0px rgba(204, 198, 198, 0.75);
 }
@@ -208,4 +219,23 @@ a{
 
 .margLeft{
     margin-left: 20px;
+}
+
+.footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    height: 13em;
+    padding-top: 1em;
+    padding-right: 15em;
+    margin-top: 3em;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+}
+
+a > p{
+    margin-top: 10px;
 }
