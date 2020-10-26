@@ -5,7 +5,6 @@
 
 body{
     font-family: 'Raleway', Impact, "Arial Black", sans-serif;
-    font-size: small;
     margin-bottom: 3em; 
     margin-top: 3em;
     margin-right: 8em;
@@ -19,12 +18,22 @@ a{
     margin: 0;
 }
 
+p{
+    font-size: 1em;
+    margin: 0.3em 0 0.3em 0;
+}
+
 section{
     margin-top: 3em;
 }
 
+h1, h2{
+    font-size: 1.3em;
+}
+
 h3{
-    overflow-wrap: break-word;
+    font-size: 1.2em;
+    margin: 0.3em 0 0.3em 0;
 }
 
 .nav{
@@ -87,26 +96,36 @@ h3{
     height: auto;
     width: 65%;
     border-radius: 1em;
+    padding: 1em 2em 1em 2em;
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
-    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.fix{
-    width: 100%;
-    margin-left: 1em;
+.filteredCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 35em;
+    padding-top: 1.5em;
 }
 
 .card{
     background-color: white;
-    width: 250px;
-    height: 210px;
+    width: 28%;
+    height: 40%;
     border-radius: 1em;
-    margin-bottom: 3em;
     padding: 5px;
     box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8em;
 }
 
 .card > img{
@@ -116,29 +135,13 @@ h3{
     border-radius: 1em 1em 0em 0em;
 }
 
-.cardContent{
-    display: flex;
-    flex-flow: column nowrap;
-    height: 80px;
-    padding-left: 10px;
-    padding-top: 8px;
-}
-
-.cardContent > h3{
-    margin: 5px;
-}
-
-.cardContent > p{
-    margin: 5px;
-}
-
 .popResults{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #F2F2F2;
     height: auto;
-    width: 26%;
+    width: 25%;
     border-radius: 1em;
     padding: 1em;
 }
@@ -154,7 +157,7 @@ h3{
     display: flex;
     flex-flow: column wrap;
     background-color: white;
-    width: 330px;
+    width: 88%;
     height: 150px;
     border-radius: 1em;
     margin-bottom: 3em;
@@ -169,8 +172,25 @@ h3{
     border-radius: 1em 0em 0em 1em;
 }
 
+.cardContentPop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 58%;
+    height: 100%;
+    padding-left: 10px;
+}
+
 .popStar{
-    margin-top: 3em;
+    margin: 0.3em 0em 0.3em 0em;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+
+.gray{
+    color: #F2F2F2;
 }
 
 .activityTown{
