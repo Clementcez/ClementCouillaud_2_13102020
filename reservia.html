@@ -11,13 +11,11 @@
     
     <header>
         <nav class="nav">
-            <div class="logo"></div>
-            <div class="links">
-                <ul class="menu">
-                  <li><a href="#">Lien1</a></li>
-                  <li><a href="#">Lien2</a></li>
-                  <li><a href="#">Lien3</a></li>
-                </ul>
+            <a href="#" class="logo"></a>
+            <div class="menu">
+                <a href="#Hébergements" class="menuStyle">Hébergements</a>
+                <a href="#Activités" class="menuStyle">Activités</a>
+                <a href="#" class="menuStyle menuSpe">S'inscrire</a>
             </div>
         </nav>
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -42,7 +40,7 @@
 
     <main>
 
-        <section class="totalResults">
+        <section id="Hébergements" class="totalResults">
             <div class="filtered">
                 <h2>Hébergements à Marseille</h2>
                 <div class="filteredCard">
@@ -191,36 +189,49 @@
             </div>
         </section>
 
-        <section>
+        <section id="Activités">
             <h2>Activités à Marseille</h2>
             <div class="activityTown">
                 <div class="activityCard">
-                    <div class="bigCard">
+                    <a href="#" class="bigCard">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Vieux Port</h3>
-                    </div>
-                    <div class="litCard">
+                        <div class="titleActCard">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="litCard">
                         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Fort de Pomègues</h3>
-                    </div>
-                    <div class="litCard">
+                        <div class="titleActCard">
+                            <h3>Fort de Pomègues</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="litCard">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Îles du Frioul</h3>
-                    </div>
+                        <div class="titleActCard">
+                            <h3>Îles du Frioul</h3>
+                        </div>
+                    </a>
                 </div>
+
                 <div class="activityCard">
-                    <div class="bigCard">
+                    <a href="#" class="bigCard">
                         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Parc National des Calanques</h3>
-                    </div>
-                    <div class="litCard">
+                        <div class="titleActCard">
+                            <h3>Parc National des Calanques</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="litCard">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Notre-Dame-de-la-Garde</h3>
-                    </div>
-                    <div class="litCard">
+                        <div class="titleActCard">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="litCard">
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                        <h3 class="margLeft">Parc Longchamp</h3>
-                    </div>
+                        <div class="titleActCard">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
