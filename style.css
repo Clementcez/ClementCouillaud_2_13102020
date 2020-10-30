@@ -117,51 +117,45 @@ h3{
     cursor: pointer;
 }
 
-.searchButton:focus{
-    outline: none;
-}
-
 .filters{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 3em;
-    width: 75%;
+    height: auto;
+    width: 70%;
 }
 
-.filters > div{
+.buttonFilt{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    height: 3em;
+    height: 4em;
     width: auto;
     border: 2px solid #d6d6d6;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    background-color: white;
+    border-radius: 2em 2em 2em 2em;
 }
 
 .iconFilt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 3em;
-    background-color: #DEEBFF;
-    border: 3px solid #DEEBFF;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    font-size: 2.1em;
+    right: 0.6em;
 }
 
-.iconFilt:hover{
-
+.icoSize{
+    font-size: 0.7em;
 }
 
 .blue{
     color: #0065FC;
 }
 
+.Lblue{
+    color: #DEEBFF;
+}
+
 .txtFilt{
-    margin: 0 1em 0 1em;
+    position: relative;
+    right: 0.8em;
 }
 
 .results{
