@@ -25,7 +25,7 @@ p{
 }
 
 section{
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 h1, h2{
@@ -57,6 +57,8 @@ h3{
     width: 33%;
     align-items: center;
     justify-content: center;
+    border-top: 0.2em solid;
+    border-color: transparent;
 }
 
 .menuStyle:hover{
@@ -90,6 +92,7 @@ h3{
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
+    font-size: 1.3em;
     border-radius: 1em 0 0 1em;
 }
 
@@ -127,6 +130,7 @@ h3{
 }
 
 .buttonFilt{
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: 4em;
@@ -134,6 +138,11 @@ h3{
     border: 2px solid #d6d6d6;
     background-color: white;
     border-radius: 2em 2em 2em 2em;
+}
+
+.buttonFilt:hover{
+    background-color: #0065FC;
+    transition: background-color 0.5s linear;
 }
 
 .iconFilt{
