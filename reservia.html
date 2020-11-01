@@ -13,8 +13,8 @@
             <nav class="nav">
                 <a href="#" class="logo"></a>
                 <div class="menu">
-                    <a href="#Hébergements" class="menuStyle">Hébergements</a>
-                    <a href="#Activités" class="menuStyle">Activités</a>
+                    <a href="#Hébergements" class="menuStyle respStyle">Hébergements</a>
+                    <a href="#Activités" class="menuStyle respStyle">Activités</a>
                     <a href="#" class="menuStyle menuSpe">S'inscrire</a>
                 </div>
             </nav>
@@ -25,7 +25,10 @@
                     <i class="fas fa-map-marker-alt ico"></i>
                 </div>
                 <input class="search" type="search" id="town-search" name="q" aria-label="Search town" placeholder="Marseille, France">
-                <button class="searchButton">Rechercher</button>
+                <button class="searchButton">
+                    <span class="showOnMobile"><i class="fas fa-search"></i></span>
+                    <span class="showOnDesktop">Rechercher</span>
+                </button>
             </div>
             <div class="filtersBar">
                 <h3>Filtres</h3>
