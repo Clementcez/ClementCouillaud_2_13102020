@@ -30,11 +30,13 @@ section{
 
 h1, h2{
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 h3{
     font-size: 1.2em;
     margin: 0.3em 0 0.3em 0;
+    font-weight: bold;
 }
 
 .nav{
@@ -59,6 +61,7 @@ h3{
     justify-content: center;
     border-top: 0.2em solid;
     border-color: transparent;
+    font-weight: bold;
 }
 
 .menuStyle:hover{
@@ -103,6 +106,10 @@ h3{
     padding: 2px 0 2px 0;
     font: bold 1.1em 'Raleway', Impact, "Arial Black", sans-serif;
     text-indent: 1em;
+}
+
+::placeholder{
+    color: black;
 }
 
 .search:focus{
@@ -379,18 +386,37 @@ h3{
 }
 
 .footer{
-    background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 100%;
     height: 13em;
-    padding-top: 1em;
-    padding-right: 15em;
     margin-top: 3em;
 }
 
 .footerContent{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+    width: 75%;
+    margin-left: 3em;
+}
+
+.footerP{
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+.footerLinks > a{
+    margin-top: 0.3em;
 }
 
 @media screen and (max-width: 768px){
@@ -402,10 +428,6 @@ h3{
         margin: unset;
     }
 
-    header{
-        margin: 0 4% 0 4%;
-    }
-
     section{
         margin-top: 1em;
     }
@@ -414,9 +436,13 @@ h3{
         font-size: 0.8em;
         margin: 0.2em 0 0.2em 0;
     }
-    
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
     h3{
-        font-size: 1.1em;
+        font-size: 1em;
         margin: 0.2em 0 0.2em 0;
     }
 
@@ -424,6 +450,10 @@ h3{
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 1.5em;
+    }
+
+    .logo{
+        margin-left: 4%;
     }
 
     .menu{
@@ -459,18 +489,30 @@ h3{
         right: 4%;
     }
 
+    .respHeaderTitle{
+        margin: 0 4% 0 4%;
+    }
+
     .searchBar{
-        width: 100%;
+        width: auto;
         height: 3em;
-        margin: 1.5em 0 1.5em 0;
+        margin: 1.5em 4% 1.5em 4%;
     }
 
     .mapIcon{
-        width: 25%;
+        width: 4.5em;
+    }
+
+    .search{
+        font: bold 0.8em 'Raleway', Impact, "Arial Black", sans-serif;
+        text-indent: 0.8em;
     }
 
     .searchButton{
-        width: 25%;
+        width: 4.5em;
+        border-radius: 0.9em 0.9em 0.9em 0.9em;
+        position: relative;
+        right: 0.6em;
     }
 
     .showOnDesktop{
@@ -482,9 +524,10 @@ h3{
     }
 
     .filtersBar{
-        width: 100%;
+        width: auto;
         flex-direction: column;
         align-items: unset;
+        margin: 0 4% 0 4%;
     }
 
     .filters{
@@ -505,12 +548,16 @@ h3{
     }
 
     .results{
-        margin-top: 1.5em;
+        margin: 1.5em 4% 0 4%;
     }
 
     .totalResults{
         flex-direction: column-reverse;
         width: 100%;
+    }
+
+    .logoTitlePop .fa-2x{
+        font-size: 1.3em;
     }
 
     .popResults{
@@ -523,6 +570,11 @@ h3{
     .cardPop{
         height: 8em;
         margin-bottom: 0.9em;
+        padding: 4px;
+    }
+
+    .cardContentPop{
+        padding: 0.5em 0 0.5em 10px;
     }
 
     .filtered{
@@ -542,6 +594,11 @@ h3{
         width: 100%;
         height: 12em;
         margin-bottom: 0.9em;
+        padding: 4px;
+    }
+
+    .cardContent {
+        padding: 0.3em 0 0 0.6em;
     }
 
     .activityTown{
@@ -582,20 +639,51 @@ h3{
     }
 
     .footer{
-        flex-direction: column;
+        align-items: center;
         padding: 2em 1.5em 0 1.5em;
         margin-top: 2em;
-        height: auto;
+        height: 23em;
+        width: auto;
     }
 
     .footerContent{
         margin-bottom: 2em;
+        margin-left: unset;
+        flex-direction: column;
+        height: 93%;
+        width: auto;
+    }
+
+    .footerP{
+        height: auto;
+    }
+
+    .footerLinks > a{
+        margin-top: 0.3em;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px){
+
+    main{
+        margin: 0 3% 0 3%;
+    }
+
+    .searchBar{
+        width: 50%;
+    }
+
     .filters{
-        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .filtersBar{
+        align-items: unset;
+        width: auto;
+    }
+
+    .buttonFilt{
+        margin: 0.5em 0 0.5em 0;
     }
 
     .totalResults{
@@ -604,26 +692,67 @@ h3{
     }
 
     .filtered{
-        width: 95%;
+        width: auto;
+    }
+
+    .filteredCard{
+        padding: unset;
+    }
+
+    .card{
+        height: 46%;
+        margin-bottom: 2em;
+    }
+
+    .cardContent{
+        height: 100%;
+        justify-content: space-around;
     }
 
     .popResults{
-        flex-direction: row;
-        width: 95%;
+        flex-direction: column;
+        width: auto;
         margin-top: 2em;
+        padding: 1em 2em 2em 2em;
     }
 
     .logoTitlePop{
-        flex-direction: column;
+        flex-direction: row;
         width: auto;
+        margin-bottom: 0.5em;
     }
 
     .filteredPop{
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .cardPop{
-        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 20em;
+    }
+
+    .cardContentPop {
+        padding:0.5em 0 0.5em 10px;
+    }
+
+    .totalActiCard{
+        flex-direction: column;
+    }
+
+    .activityCard{
+        width: auto;
+        height: 30em;
+        margin-bottom: 2em;
+    }
+
+    .footer{
+        margin-top: unset;
     }
     
+    .footerContent{
+        width: 90%;
+        margin-left: 2em;
+    }
 }
