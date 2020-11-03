@@ -5,11 +5,11 @@
 
 body{
     font-family: 'Raleway', Impact, "Arial Black", sans-serif;
-    margin: 1% 3% 2% 3%;
+    margin: 1% 2% 1% 2%;
 }
 
 main{
-    margin-left: 2em;
+    margin: 0 3% 0 3%;
 }
 
 a{
@@ -336,20 +336,26 @@ h3{
     display: flex;
     flex-direction: row;
     margin-top: 0.8em;
+    height: 30em;
 }
 
-.activityCard{
+.respMedium{
+    display: flex;
+    flex-direction: row;
+}
+
+.activityLitCard{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
-    height: 35em;
-    width: 50%;
+    height: auto;
+    width: auto;
+    margin-left: 3em;
 }
 
 .bigCard{
     height: 100%;
-    width: 45%;
+    width: auto;
     border-radius: 1em 1em 1em 1em;
     box-shadow: 0px 0px 15px 0px rgba(204, 198, 198, 0.75);
     display: flex;
@@ -357,9 +363,20 @@ h3{
     justify-content: space-between;
 }
 
+.bigCard2{
+    height: 100%;
+    width: auto;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0px 0px 15px 0px rgba(204, 198, 198, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3em;
+}
+
 .litCard{
     height: 45%;
-    width: 45%;
+    width: auto;
     border-radius: 1em 1em 1em 1em;
     box-shadow: 0px 0px 15px 0px rgba(204, 198, 198, 0.75);
     display: flex;
@@ -368,14 +385,21 @@ h3{
 }
 
 .bigCard > img{
-    height: 92%;
+    height: 86%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.bigCard2 > img{
+    height: 86%;
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
 
 .litCard > img{
-    height: 80%;
+    height: 70%;
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
@@ -422,7 +446,7 @@ h3{
     margin-top: 0.3em;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     body{
         margin: unset;
     }
@@ -594,7 +618,7 @@ h3{
     }
 
     .card{
-        width: 100%;
+        width: auto;
         height: 12em;
         margin-bottom: 0.9em;
         padding: 4px;
@@ -607,23 +631,36 @@ h3{
     .activityTown{
         flex-direction: column;
         width: auto;
-        flex-grow: 1;
         padding: 1em 1.5em 0 1.5em;
     }
 
     .totalActiCard{
         flex-direction: column;
         margin-top: 0.9em;
+        height: auto;
     }
 
-    .activityCard{
+    .respMedium{
+        display: unset;
+        flex-direction: unset;
+    }
+
+    .activityLitCard{
         height: auto;
         width: 100%;
+        margin: unset;
     }
 
     .bigCard{
-        width: 100%;
+        width: auto;
         height: 9em;
+        margin-bottom: 1em;
+    }
+
+    .bigCard2{
+        width: auto;
+        height: 9em;
+        margin: unset;
         margin-bottom: 1em;
     }
 
@@ -632,7 +669,7 @@ h3{
     }
 
     .litCard {
-        width: 100%;
+        width: auto;
         height: 9em;
         margin-bottom: 1em;
     }
@@ -740,14 +777,35 @@ h3{
         padding:0.5em 0 0.5em 10px;
     }
 
-    .totalActiCard{
-        flex-direction: column;
+    .activityTown{
+        height: auto;
     }
 
-    .activityCard{
+    .totalActiCard{
+        flex-direction: column;
+        height: 50em;
+    }
+
+    .respMedium{
+        display: flex;
+        flex-direction: row;
+        height: 45%;
         width: auto;
-        height: 30em;
         margin-bottom: 2em;
+    }
+
+    .bigCard{
+        width: 80%;
+    }
+
+    .bigCard2{
+        width: 73%;
+        margin: unset;
+    }
+
+    .activityLitCard{
+        width: auto;
+        margin-left: 2em;
     }
 
     .footer{
