@@ -342,6 +342,7 @@ h3{
 .respMedium{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .activityLitCard{
@@ -351,6 +352,10 @@ h3{
     height: auto;
     width: auto;
     margin-left: 3em;
+}
+
+.mod{
+    width: 106%;
 }
 
 .bigCard{
@@ -643,6 +648,10 @@ h3{
     .respMedium{
         display: unset;
         flex-direction: unset;
+    }
+
+    .mod{
+        width: unset;
     }
 
     .activityLitCard{
