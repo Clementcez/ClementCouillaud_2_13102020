@@ -270,6 +270,10 @@ h3{
     width: 100%;
 }
 
+.logoTitlePop .fa-2x{
+    font-size: 1.5em;
+}
+
 .filteredPop{
     display: flex;
     flex-direction: column;
