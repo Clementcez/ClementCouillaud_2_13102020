@@ -162,6 +162,8 @@ h3{
 .buttonFilt:hover{
     background-color: #0065FC;
     transition: background-color 0.5s linear;
+    color: white;
+    transition: color 0.5s;
 }
 
 .iconFilt{
@@ -674,6 +676,10 @@ h3{
     }
 
     .bigCard > img{
+        height: 70%;
+    }
+
+    .bigCard2 > img{
         height: 70%;
     }
 
