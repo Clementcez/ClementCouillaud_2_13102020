@@ -770,7 +770,7 @@ h3{
 
     .popResults{
         flex-direction: column;
-        width: auto;
+        width: 26em;
         margin-top: 2em;
         padding: 1em 2em 2em 2em;
     }
@@ -788,7 +788,7 @@ h3{
 
     .cardPop{
         margin-bottom: 2em;
-        width: 20em;
+        width: auto;
     }
 
     .cardContentPop {
