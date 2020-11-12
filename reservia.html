@@ -8,73 +8,72 @@
     <title>Reservia</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav class="nav">
-                <a href="reservia.html" title="Accueil Reservia" class="logo"></a>
-                <div class="menu">
-                    <a href="#Hébergements" class="menuStyle respStyle">Hébergements</a>
-                    <a href="#Activités" class="menuStyle respStyle">Activités</a>
-                    <a href="#" class="menuStyle menuSpe">S'inscrire</a>
-                </div>
-            </nav>
-            <div class="respHeaderTitle">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>  
-            <div class="searchBar">
-                <div class="mapIcon">
-                    <i class="fas fa-map-marker-alt ico"></i>
-                </div>
-                <input class="search" type="search" id="town-search" name="q" aria-label="rechercher un ville" placeholder="Marseille, France">
-                <button class="searchButton">
-                    <span class="showOnMobile"><i class="fas fa-search"></i></span>
-                    <span class="showOnDesktop">Rechercher</span>
+    <header>
+        <nav class="nav">
+            <a href="reservia.html" title="Accueil Reservia" class="logo"></a>
+            <div class="menu">
+                <a href="#Hébergements" class="menuStyle respStyle">Hébergements</a>
+                <a href="#Activités" class="menuStyle respStyle">Activités</a>
+                <a href="#" class="menuStyle menuSpe">S'inscrire</a>
+            </div>
+        </nav>
+        <div class="respHeaderTitle">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>  
+        <div class="searchBar">
+            <div class="mapIcon">
+                <i class="fas fa-map-marker-alt ico"></i>
+            </div>
+            <input class="search" type="search" id="town-search" name="q" aria-label="rechercher un ville" placeholder="Marseille, France">
+            <button class="searchButton">
+                <span class="showOnMobile"><i class="fas fa-search"></i></span>
+                <span class="showOnDesktop">Rechercher</span>
+            </button>
+        </div>
+        <div class="filtersBar">
+            <h3>Filtres</h3>
+            <div class="filters">
+                <button class="buttonFilt">
+                    <span class="iconFilt fa-stack">
+                        <i class="fas fa-circle fa-stack-2x Lblue"></i>
+                        <i class="fas fa-money-bill-wave fa-stack-1x icoSize blue"></i>
+                    </span>
+                    <span class="txtFilt">Économique</span>
+                </button>
+                <button class="buttonFilt">
+                    <span class="iconFilt fa-stack">
+                        <i class="fas fa-circle fa-stack-2x Lblue"></i>
+                        <i class="fas fa-child fa-stack-1x icoSize blue"></i>
+                    </span>
+                    <span class="txtFilt">Familial</span>
+                </button>
+                <button class="buttonFilt">
+                    <span class="iconFilt fa-stack">
+                        <i class="fas fa-circle fa-stack-2x Lblue"></i>
+                        <i class="fas fa-heart fa-stack-1x icoSize blue"></i>
+                    </span>
+                    <span class="txtFilt">Romantique</span>
+                </button>
+                <button class="buttonFilt">
+                    <span class="iconFilt fa-stack">
+                        <i class="fas fa-circle fa-stack-2x Lblue"></i>
+                        <i class="fas fa-dog fa-stack-1x icoSize blue"></i>
+                    </span>
+                    <span class="txtFilt">Animaux autorisés</span>
                 </button>
             </div>
-            <div class="filtersBar">
-                <h3>Filtres</h3>
-                <div class="filters">
-                    <button class="buttonFilt">
-                        <span class="iconFilt fa-stack">
-                            <i class="fas fa-circle fa-stack-2x Lblue"></i>
-                            <i class="fas fa-money-bill-wave fa-stack-1x icoSize blue"></i>
-                        </span>
-                        <span class="txtFilt">Économique</span>
-                    </button>
-                    <button class="buttonFilt">
-                        <span class="iconFilt fa-stack">
-                            <i class="fas fa-circle fa-stack-2x Lblue"></i>
-                            <i class="fas fa-child fa-stack-1x icoSize blue"></i>
-                        </span>
-                        <span class="txtFilt">Familial</span>
-                    </button>
-                    <button class="buttonFilt">
-                        <span class="iconFilt fa-stack">
-                            <i class="fas fa-circle fa-stack-2x Lblue"></i>
-                            <i class="fas fa-heart fa-stack-1x icoSize blue"></i>
-                        </span>
-                        <span class="txtFilt">Romantique</span>
-                    </button>
-                    <button class="buttonFilt">
-                        <span class="iconFilt fa-stack">
-                            <i class="fas fa-circle fa-stack-2x Lblue"></i>
-                            <i class="fas fa-dog fa-stack-1x icoSize blue"></i>
-                        </span>
-                        <span class="txtFilt">Animaux autorisés</span>
-                    </button>
-                </div>
-            </div>
-            <div class="results">
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                <span class="fa-stack">
-                    <i class="far fa-circle fa-stack-2x gray"></i>
-                    <i class="fas fa-info fa-stack-1x blue"></i>
-                </span>
-            </div>
-        </header>
+        </div>
+        <div class="results">
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <span class="fa-stack">
+                <i class="far fa-circle fa-stack-2x gray"></i>
+                <i class="fas fa-info fa-stack-1x blue"></i>
+            </span>
+        </div>
+    </header>
 
-
+    <main>
         <section id="Hébergements" class="totalResults">
             <div class="filtered">
                 <h2>Hébergements à Marseille</h2>
