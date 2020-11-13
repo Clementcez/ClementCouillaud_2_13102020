@@ -750,6 +750,10 @@ h3{
         flex-wrap: wrap;
     }
 
+    .filtMod{
+        margin-top: 1.1em;
+    }
+
     .filtersBar{
         align-items: unset;
         width: auto;
